@@ -20,6 +20,7 @@
         </div>
     
         <button type="button" onclick="accept()">Submit</button>
+        <p id="me"></p>
       </section>
   </div>
 </body>
@@ -28,8 +29,7 @@
   function accept() {
     var response = "You requested for maintenance checkup";
     console.log(response);
-    alert("REQUEST HAS BEEN SUBMITTED")
-    requestInput.value = "";
+      document.getElementById("me").innerHTML="REQUEST HAS BEEN SUBMITTED"
   }
 </script>
 </html>
