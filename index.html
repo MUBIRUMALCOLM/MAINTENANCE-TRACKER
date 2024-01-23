@@ -3,36 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAINTENANCE TRAKER</title>
+  <title>Maintenance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <h1>Welcolme to Maintenance Tracker</h1>
-  <section>
-    <h2>User Login</h2>
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username"><br>
+  <h1>Welcome to Maintenance Tracker</h1>
+  <div class="design">
+    <section>
+      <h2>User Login</h2>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br>
+      </div>
+  
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+      </div>
+  
+      <button type="button" onclick="login()">Log In</button><br>
+      <p id="me"></p>
+    </section>
+  </div>
 
-    
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password"><br>
 
-
-    <button type="button" onclick="login()">Log In</button><br>
-
-    
-  </section>
 </body>
-  <script>
-    function login(){
-      var user= document.getElementById("username").value
-      console.log(user)
-      var passcode= document.getElementById("password").value
-      console.log(passcode)
-
-      if (username == "admin" && password == "123") {
-        alert("Login successful");
-      }
-    
+<script>
+  function login() {
+    var user = document.getElementById("username").value;
+    var passcode = document.getElementById("password").value;
+  
+    if (user === "Malcolm" && passcode === "123") {
+      window.location.href="maintenance.html"
+    } else {
+      document.getElementById("me").innerHTML="invalid user name or password"
     }
-  </script>
+  
+  }
+  
+  function enter() {
+    var response = "You clicked the 'Logged In' button!";
+    console.log(response);
+    complaint.push (response)
+    console.log (complaint)
+  }
+</script>
 </html>

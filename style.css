@@ -1,0 +1,61 @@
+body {
+  background-color: blue;
+  padding-top: 100px;
+}
+
+.design{
+  border: 50px;
+  padding: 20px;
+  margin: auto;
+  height: 200px;
+  width: 420px;
+  background-color: orange;
+  border-radius: 50px;
+  
+}
+
+p {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 70%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+#requests-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}

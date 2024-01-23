@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance Tracker</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <h1>Welcome to Maintenance Request Page</h1>
+  <div class="design">
+    <section id="requests-section">
+        <h2>Maintenance/Repair Requests</h2>
+        <div id="requests-container">
+        </div>
+         
+        <div>
+          <label for="request">Request</label>
+          <input type="text" id="request" name="request">
+        </div>
+    
+        <button type="button" onclick="accept()">Submit</button>
+      </section>
+  </div>
+</body>
+<script>
+  
+  function accept() {
+    var response = "You requested for maintenance checkup";
+    console.log(response);
+  }
+</script>
+</html>
