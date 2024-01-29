@@ -16,7 +16,7 @@
          
         <div>
           <label for="request">Request</label>
-          <input type="text" id="request" name="request">
+          <textarea  id="request" cols="30" rows="10" resize="both"></textarea>
         </div>
     
         <button type="button" onclick="accept()">Submit</button>
@@ -25,11 +25,20 @@
   </div>
 </body>
 <script>
-  
+   var malcolm = []
+
   function accept() {
-    var response = "You requested for maintenance checkup";
-    console.log(response);
-      document.getElementById("me").innerHTML="REQUEST HAS BEEN SUBMITTED"
+    localStorage.getItem("user")
+    console.log(localStorage.getItem("user")
+    )
+    var requestInput = document.getElementById("request").value
+    malcolm.push(requestInput)
+    document.getElementById("request").value=""
+    console.log(malcolm)
+    document.getElementById("me").innerHTML = "REQUEST HAS BEEN SUBMITTED"; 
+    requestInput.value = "";
+    localStorage.setItem("complaintslist",malcolm)
+    console.log(malcolm)
   }
 </script>
 </html>

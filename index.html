@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maintenance Tracker</title>
+  <title>LOGIN PAGE</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -27,7 +27,7 @@
     </section>
   </div>
 
-
+  
 </body>
 <script>
   function login() {
@@ -35,8 +35,12 @@
     var passcode = document.getElementById("password").value;
   
     if (user === "Malcolm" && passcode === "123") {
+      localStorage.setItem("user","Malcolm")
       window.location.href="maintenance.html"
-    } else {
+    } else if(user === "admin" && passcode === "admin123") {
+      window.location.href="admin.html"
+    } 
+    else {
       document.getElementById("me").innerHTML="invalid user name or password"
     }
   
