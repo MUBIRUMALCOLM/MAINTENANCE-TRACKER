@@ -6,16 +6,22 @@
   <title>ADMIN</title>
   <link rel="stylesheet" href="admin.css">
 </head>
-<body>
+<body onload="enter()">
   <p>WELCOME TO THE ADMIN PAGE</p>
+  <ul id="coni">
+  </ul>
 
-  <button onclick="enter()">Submit</button>
 </body>
 <script>
   function enter(){
-    localStorage.getItem("complaints")
-    console.log(localStorage.getItem("complaintslist")
-    )
+   var mylist = document.getElementById("coni")
+   var me = localStorage.getItem("complaintslist")
+   const myArray = me.split(",")
+   for( var yuno = 0; yuno<myArray.length; yuno++){
+    var listitem = document.createElement("li")
+    listitem.textContent = myArray[yuno]
+    mylist.appendChild(listitem)
+   }
   }
 </script>
 </html>
