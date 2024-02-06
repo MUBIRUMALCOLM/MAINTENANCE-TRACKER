@@ -8,20 +8,37 @@
 </head>
 <body onload="enter()">
   <p>WELCOME TO THE ADMIN PAGE</p>
-  <ul id="coni">
-  </ul>
+  <table>
+    <thead>
+      <tr>
+        <th>Complaints</th>
+        <th>Click To Change Status</th>
+      </tr>
+    </thead>
+    <tbody id="coni">
+    </tbody>
+  </table>
 
 </body>
 <script>
   function enter(){
-   var mylist = document.getElementById("coni")
-   var me = localStorage.getItem("complaintslist")
-   const myArray = me.split(",")
-   for( var yuno = 0; yuno<myArray.length; yuno++){
-    var listitem = document.createElement("li")
-    listitem.textContent = myArray[yuno]
-    mylist.appendChild(listitem)
+   var mylist = document.getElementById("coni");
+   var me = localStorage.getItem("complaintslist");
+   const myArray = me.split(",");
+   for(var yuno = 0; yuno<myArray.length; yuno++){
+    var row = mylist.insertRow();
+    var cell = row.insertCell(0);
+    var cell2 = row.insertCell(1)
+    cell.innerHTML = myArray[yuno];
+    cell2.innerHTML = "new"
+    cell2.onclick= function (){
+      if (cell2.innerHTML == "new"){
+        cell2.innerHTML = "done"
+        console.log("status changed to done")
+      }
+    }
    }
   }
+ 
 </script>
 </html>

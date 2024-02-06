@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: orangered;
+    background-color: burlywood;
     margin: 0;
     padding: 20px;
   }
@@ -10,17 +10,18 @@ body {
     color: #333;
     text-align: center;
   }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}

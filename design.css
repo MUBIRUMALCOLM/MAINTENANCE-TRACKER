@@ -13,24 +13,24 @@ body {
     border: 50px;
     padding: 50px;
     margin: auto;
-    height: 400px;
+    height: 420px;
     width: 400px;
     background-color: antiquewhite;
     border-radius: 100px;
   }
   
   #requests-section {
-    margin-top: 50px;
+    margin-top: 10px;
     border: 1px solid #999;
     padding: 20px;
     background-color: #fff;
   }
   
   #requests-container {
-    margin-top: 20px;
-    display: flex;
+    margin-top: 10px;
+    display: contents;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   label {
@@ -47,10 +47,10 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 10px;
+    margin-bottom: 20px;
     display: block;
     width: 90%;
     height: 50px
-    margin-bottom: 20px;
   }
   
   button {
