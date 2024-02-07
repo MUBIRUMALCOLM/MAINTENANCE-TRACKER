@@ -27,7 +27,7 @@ User: Malcolm
 Password: 123
 
 This is the link address to the maintenance tracker below
-https://github.com/MUBIRUMALCOLM/MAINTENANCE-TRACKER.git
+https://mubirumalcolm.github.io/MAINTENANCE-TRACKER/
 
 
 
