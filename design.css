@@ -3,11 +3,15 @@ body {
     background-color: #f0f0f0;
     padding: 20px;
   }
-  
+
   h1 {
-    color: #333;
+    font-size: 48px;
+    color: white;
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
   }
+  
 
   .design {
     border: 50px;
