@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN PAGE</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="design">
+    <section>
+      <h2>User Login</h2>
+        <input type="text" id="username" name="username" placeholder="enter username"><br>
+  
+        <input type="password" id="password" name="password" placeholder="enter password"><br>
+  
+      <button type="button" onclick="login()">Log In</button><br>
+      <p id="me"></p>
+    </section>
+  </div>
+
+  
+</body>
+<script>
+  function login() {
+    var user = document.getElementById("username").value;
+    var passcode = document.getElementById("password").value;
+  
+    if (user === "Malcolm" && passcode === "123") {
+      localStorage.setItem("user","Malcolm")
+      window.location.href="maintenance.html"
+    } else if(user === "admin" && passcode === "admin123") {
+      window.location.href="admin.html"
+    } 
+    else {
+      document.getElementById("me").innerHTML="invalid user name or password"
+    }
+  
+  }
+  
+  function enter() {
+    var response = "You clicked the 'Logged In' button!";
+    console.log(response);
+    complaint.push (response)
+    console.log (complaint)
+  }
+</script>
+</html>

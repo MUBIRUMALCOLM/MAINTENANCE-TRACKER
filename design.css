@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: black;
     padding: 20px;
   }
 
@@ -19,7 +19,6 @@ body {
     margin: auto;
     height: 420px;
     width: 400px;
-    background-color: antiquewhite;
     border-radius: 100px;
   }
   
@@ -28,6 +27,8 @@ body {
     border: 1px solid #999;
     padding: 20px;
     background-color: #fff;
+    width: 500px;
+
   }
   
   #requests-container {
@@ -44,7 +45,12 @@ body {
   }
 
   textarea {
-    resize: both;
+    height: 150px;
+    width: 400px;
+    padding: 30px;
+    resize: none; 
+
+
   }
   
   input[type="text"] {
@@ -58,10 +64,11 @@ body {
   }
   
   button {
-    background-color: #4CAF50;
+    background-color: blue;
     border: none;
     color: white;
     padding: 20px 30px;
+    width: 470px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -72,5 +79,5 @@ body {
   }
   
   button:hover {
-    background-color: #3e8e41;
+    background-color: rgba(0, 0, 255, 0.686);
   }

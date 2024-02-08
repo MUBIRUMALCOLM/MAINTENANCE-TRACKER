@@ -5,8 +5,9 @@ body {
 
 .design{
   border: 50px;
-  padding: 20px;
   margin: auto;
+  padding: 25px;
+  padding-bottom: 50px;
   height: 200px;
   width: 420px;
   background-color: orange;
@@ -14,8 +15,18 @@ body {
   
 }
 
+section{
+  margin: auto;
+}
+
+input button{
+  text-align: center;
+}
+
 p {
   color: red;
+  text-align: center;
+  font-weight: bold;
 }
 
 h1 {
@@ -27,6 +38,10 @@ h1 {
 h2 {
   font-size: 18px;
   margin-bottom: 10px;
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+  font-size: xx-large;
   
 }
 
@@ -44,11 +59,13 @@ input[type="password"] {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: blue;
+  width: 73%;
   color: white;
   padding: 8px 15px;
   border: none;
   border-radius: 4px;
+  margin-left: 45px;
   cursor: pointer;
   margin-bottom: 10px;
   align-items: center;
@@ -58,4 +75,12 @@ button {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
+
+input{
+  margin-left: 45px;
+  text-align: center;
+  height: 25px;
+}
+
