@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  tbody td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;}
+
+    
+  
+  tbody td:contains("Complete") {
+    color: green;
+    font-weight: bold;
+  }
+  
+  tbody td:contains("In Progress") {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  
+  tbody td:contains("Pending") {
+    color: red;
+    font-weight: bold;
+  }

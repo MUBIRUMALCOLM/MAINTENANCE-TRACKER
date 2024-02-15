@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADMIN</title>
   <link rel="stylesheet" href="admin.css">
 </head>
+
 <body onload="enter()">
   <p>WELCOME TO THE ADMIN PAGE</p>
   <table>
     <thead>
       <tr>
         <th>Complaints</th>
-        <th>Click To Change Status</th>
+        <th>Status</th>
       </tr>
     </thead>
     <tbody id="coni">
     </tbody>
   </table>
 
-</body>
-<script>
-  function handleStatusCellClick(cell2) {
-    if (cell2.textContent === 'new') {
-      cell2.textContent = 'done';
-    }
-  }
-  
-  function enter(){
-    var mylist = document.getElementById("coni");
-    var me = localStorage.getItem("complaintslist");
-    const myArray = me.split(",");
-    for(var yuno = 0; yuno<myArray.length; yuno++){
-      var row = mylist.insertRow();
-      var cell = row.insertCell(0);
-      var cell2 = row.insertCell(1);
-      cell.innerHTML = myArray[yuno];
-      cell2.innerHTML = "new";
-      cell2.onclick = function(){
-        handleStatusCellClick(this);
+  <script>
+    function handleStatusCellClick(cell2) {
+      if (cell2.textContent === 'new') {
+        cell2.textContent = 'done';
+      } else if (cell2.textContent === 'done') {
+        cell2.textContent = 'pending';
+      } else if (cell2.textContent === 'pending') {
+        cell2.textContent = 'done';
       }
     }
-  }
-</script>
+
+  
+    function enter() {
+      var mylist = document.getElementById("coni");
+      var me = localStorage.getItem("complaintslist");
+      const myArray = me.split(",");
+      for (var yuno = 0; yuno < myArray.length; yuno++) {
+        var row = mylist.insertRow();
+        var cell = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell.innerHTML = myArray[yuno];
+        cell2.innerHTML = "new";
+        cell2.onclick = function () {
+          handleStatusCellClick(this);
+        }
+      }
+    }
+  </script>
 
 </html>
