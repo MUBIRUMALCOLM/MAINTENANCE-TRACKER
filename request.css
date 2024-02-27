@@ -1,6 +1,12 @@
+body {
+  border: #f2f2f2;
+}
+
+
 table {
     width: 100%;
     border-collapse: collapse;
+    border-style: solid;
   }
   
   thead th {

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: grey;
     padding: 20px;
   }
 
@@ -9,7 +9,7 @@ body {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   
 
@@ -21,6 +21,7 @@ body {
     width: 400px;
     border-radius: 100px;
   }
+
   
   #requests-section {
     margin-top: 10px;

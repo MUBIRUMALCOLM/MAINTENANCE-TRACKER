@@ -1,16 +1,17 @@
 body {
-  background-color: blue;
+  background-color: grey;
   padding-top: 100px;
 }
 
 .design{
   border: 50px;
   margin: auto;
+  margin-top: 50px;
   padding: 25px;
   padding-bottom: 50px;
   height: 200px;
   width: 420px;
-  background-color: orange;
+  background-color:white;
   border-radius: 50px;
   
 }
